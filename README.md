@@ -7,11 +7,13 @@ Authentication
  - No Authentication
  - Token Authentication follows to be implemented
 
+
 URLs:
  - "api/list/" - listing all tender notices in the database
  - "api/searchByDate/" - filtering tender notices by date
  - "api/searchByNoticeId/" - filtering tender notices by Notice Number
  - "admin/" - Django Admin
+ 
  
  Database:
   - Sqlite3 
@@ -23,7 +25,12 @@ URLs:
                  'NAME': (the absolute path to the db file from your local machine),
                 }
           }
-            
+
+
+Pagination:
+  - list returns maximum of 10 items per page
+
+
 Installation:
   - have Python installed on your machine.
   - install virtualenv:
